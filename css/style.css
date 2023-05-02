@@ -1,0 +1,190 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	}
+	label{
+		font-size: 200%;
+	}
+	/* Стили для общей задачи */
+	label[for="general_task"] {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 24px;
+	}
+	input{
+	background-color: #252d3a;
+	color: #fff;
+	font-size: 24px;
+	}
+	
+	input::placeholder {
+	color: #fff;
+	font-size: 24px;
+	}
+	
+	input[name="general_task"] {
+	padding: 10px;
+	width: 100%;
+	max-width: 1000px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	font-size: 24px;
+	margin-top: 15px;
+	}
+	
+	input[class="subDes"] {
+	width: 120%;
+	max-width: 482px;
+	font-size: 24px;
+	}
+	
+	input[class="subHours"] {
+	width: 22%;
+	max-width: 100px;
+	font-size: 24px;
+	}
+
+	/* Стили для подзадач */
+	.subtask label {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: 24px;
+	}
+	.subtask input[type="text"],
+	.subtask input[type="number"] {
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	margin-right: 20px;
+	font-size: 24px;
+	}
+	
+	/* Стили для кнопок */
+	button[type="submit"],
+	button[type="button"] {
+	padding: 20px;
+	border: none;
+	border-radius: 8px;
+	font-size: 32px;
+	cursor: pointer;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+	color: #bb79e0;
+	margin-top: 28px;
+	}
+	
+	button.subtaskButton{
+	width: 100%;
+	max-width: 1000px;
+	font-size: 32px;
+	}
+	button.delete {
+	background: linear-gradient(to right, #bb79e0, #9058f6);
+	color: #ffffff;
+	border: none;
+	width: 15%;
+	height: 56px;
+	padding: 0;
+	font-size: 28px;
+	margin-top: 15px;
+	}
+
+	@media (max-width: 767px) {
+		 
+		 label {
+			font-size: 100%;
+		 }
+		 
+		 /* Стили для общей задачи */
+		 label[for="general_task"] {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 12px;
+		 }
+		 
+		 input {
+			background-color: #252d3a;
+			color: #fff;
+			font-size: 12px;
+		 }
+		 
+		 input::placeholder {
+			color: #fff;
+			font-size: 12px;
+		 }
+		 
+		 input[name="general_task"] {
+			padding: 5px;
+			width: 50%;
+			max-width: 500px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 12px;
+			margin-top: 7.5px;
+		 }
+		 
+		 input[class="subDes"] {
+			width: 60%;
+			max-width: 241px;
+			font-size: 12px;
+		 }
+		 
+		 input[class="subHours"] {
+			width: 11%;
+			max-width: 50px;
+			font-size: 12px;
+		 }
+		 
+		 /* Стили для подзадач */
+		 .subtask label {
+			display: inline-block;
+			margin-right: 10px;
+			font-weight: bold;
+			font-size: 12px;
+		 }
+		 
+		 .subtask input[type="text"],
+		 .subtask input[type="number"] {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			margin-right: 10px;
+			font-size: 12px;
+		 }
+		 
+		 /* Стили для кнопок */
+		 button[type="submit"],
+		 button[type="button"] {
+			padding: 10px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+			border: 1px solid #000000;
+			background-color: #ffffff;
+			color: #bb79e0;
+			margin-top: 14px;
+		 }
+		 
+		 button.subtaskButton {
+			width: 50%;
+			max-width: 500px;
+			font-size: 16px;
+		 }
+		 
+		 button.delete {
+			background: linear-gradient(to right, #bb79e0, #9058f6);
+			color: #ffffff;
+			border: none;
+			width: 7.5%;
+			height: 28px;
+			padding: 0;
+			font-size: 14px;
+			margin-top: 7.5px;
+		 }
+		 
+	 }
+	 
